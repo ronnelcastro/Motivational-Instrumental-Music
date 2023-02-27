@@ -1,0 +1,161 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body{
+	Background: linear-gradient(-45deg, skyblue, blue);
+}
+
+.container{
+	width: 100%;
+	min-height: 100vh;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.navbar{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	font-family: impact;
+
+}
+
+.logo{
+	width: 30px;
+	cursor: pointer;
+	margin: 20px 0;
+}
+
+.menu-icon{
+	width: 25px;
+	cursor: pointer;
+	display: none;
+}
+
+nav{
+	flex: 1;
+	text-align: left;
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 30px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #000;
+	font-family: Tahoma;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+nav ul li a:hover{
+	color: white;
+}
+
+.row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.col-1{
+	flex-basis: 40%;
+	position: relative;
+	margin-left: 0px;
+}
+
+.col-1 h1{
+	font-family: impact;
+	font-size: 60px;
+	color: white;
+	font-weight: 100;
+	margin: 0px 0 10px;
+}
+
+.redfont{
+	font-family: impact;
+	color: #FF0033;
+}
+
+.beatpic{
+	height: 60px;
+	width: 70px;
+	padding-left: 35px;
+
+}
+
+.btn{
+	width: 140px;
+	height: 70px;
+	padding: 12px 10px;
+	font-family:impact;
+	border: none;
+	color: whitesmoke;
+	background-color: rgb(255, 0, 68);
+	border-radius: 4px;
+	box-shadow: inset 0 0 0 0 black;
+	transition: ease-out 0.2s;
+	font-size: 1.5rem;
+	outline: none;
+	top: 370px;
+	border-radius: 30px;
+}
+
+.btn:hover{
+	box-shadow: inset 300px 0 0 0 yellow;
+	cursor: pointer;
+	color: #000;
+}
+
+.col-1::after{
+	content: '';
+	width: 10px;
+	height: 60%;
+	background: linear-gradient(#ff469f, #ff3527);
+	position: absolute;
+	left: -30px;
+	top: 8px;
+}
+
+.col-2{
+	position: relative;
+	flex-basis: 200%;
+	display: flex;
+	align-items: center;
+}
+
+.col-2 .img1{
+	width: 55%;
+	padding-left: 40%;
+}
+
+.color-box{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.7)50%, rgba(0, 0, 0, 0.7)50%);
+	border-radius: 20px 0 0 20px;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	transform: translateX(150px);
+}
+
+@media only screen and (max-width:700px){
+	.row{
+		flex-direction: column-reverse;
+		margin: 50px 0;
+	}
+	.col-2{
+		flex-basis: 100%;
+	}
+}
